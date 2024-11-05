@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Discount</title>
+    <link rel="stylesheet" href="food.css"/>
+</head>
+<body>
+    <section class="product-blog">
+        <div class="container">
+            <div class="heading">
+                <h1>Food Product</h1>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <div class="product-img">
+                        <img src="Burger.jpg" alt="">
+                        <div class="head">
+                            <h2>Burger</h2>
+                            <div class="price">
+                               <h3>300 RS</h3>
+                               <button onclick="addToCart('Burger', 300)">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="product-img">
+                        <img src="pizza.jpg" alt="">
+                        <div class="head">
+                            <h2>Pizza</h2>
+                            <div class="price">
+                              <h3>500 RS</h3>
+                              <button onclick="addToCart('Pizza', 500)">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="product-img">
+                        <img src="sandwich.jpg" alt="">
+                        <div class="head">
+                            <h2>Sandwich</h2>
+                            <div class="price">
+                                <h3>200 RS</h3>
+                                <button onclick="addToCart('Sandwich', 200)">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="cart">
+                        <h2>Cart</h2>
+                        <ul id="cartItems"></ul>
+                    </div>
+                    <div class="amount">
+                        <label for="discount">Discount (%)</label>
+                        <input type="number" id="discount">
+                        <button onclick="applyDiscount()">Apply Discount</button>
+                        <h1 class="TA">Total Amount = <span id="totalAmount">0</span> RS</h1>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="food.js"></script>
+</body>
+</html>
